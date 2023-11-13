@@ -1,0 +1,167 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "usevaawxss",
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "基本概念",
+          "pathName": "pages/concept/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "做n个按钮",
+          "pathName": "pages/widget/button/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "搜索框",
+          "pathName": "pages/widget/search/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "做个头像",
+          "pathName": "pages/widget/profile/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿超级名片-个人中心",
+          "pathName": "pages/personal/cjmp/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿vart线上展览-个人中心",
+          "pathName": "pages/personal/vart/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿超级名片-个人名片",
+          "pathName": "pages/detail/cjmp/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿广西展览馆-首页",
+          "pathName": "pages/home/gxzlg/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿央美画展-个人中心",
+          "pathName": "pages/personal/ymhz/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿书法绘画展厅-个人中心",
+          "pathName": "pages/personal/sfhhzt/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿优衣库-会员",
+          "pathName": "pages/vip/uniqlo/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿U设计周-个人中心",
+          "pathName": "pages/personal/usjz/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿jue味鸭脖-个人中心",
+          "pathName": "pages/personal/jwyb/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿fragrancenet-我的",
+          "pathName": "pages/personal/fragrancenet/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿ARTloop-列表",
+          "pathName": "pages/list/artloop/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿ARTloop-详情",
+          "pathName": "pages/detail/artloop/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿ARTloop-艺术家列表",
+          "pathName": "pages/list/artloopuser/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿喜茶-首页弹窗广告",
+          "pathName": "pages/home/xc/part/zz",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿喜茶-首页",
+          "pathName": "pages/home/xc/part/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿喜茶-会员码页面",
+          "pathName": "pages/vip/xc/qrcode/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿星巴克-首页",
+          "pathName": "pages/home/starbucks/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "仿星巴克-订单列表首页",
+          "pathName": "pages/list/starbucks/goods/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

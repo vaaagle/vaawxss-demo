@@ -1,0 +1,99 @@
+<!-- 背景图片轮播图 -->
+<!-- 轮播的数据放在js，这样方便图片和光点对应 -->
+<!-- 加个事件 -->
+<swiper bindchange="swiperChange" class="w-100p h-360 c-bg-yellow1" autoplay="{{true}}">
+    <swiper-item wx:for="{{swiperImg}}" class="w-100p h-100p">
+        <!-- 图片 -->
+        <image src="{{item.img}}" class="w-100p h-100p" mode="aspectFill" />
+    </swiper-item>
+</swiper>
+
+
+<!-- 主内容盒子，靠右 -->
+<view class="w-94p mlauto fc-s-s mt-30 z-index-2">
+    <!-- 自定义光标 -->
+    <view class="h-2 f-s-c mt-10 z-index-2">
+        <!-- 这里只是循环数量，数量一致就ok -->
+        <!-- 设置高亮 -->
+        <text wx:for="{{swiperImg}}" class="{{curIndex == index ? 'c-bg-gray8' : ''}} w-10 h-2 c-bg-gray1"></text>
+    </view>
+
+    <!-- 用户信息 -->
+    <view class="w-100p fc-s-s c-bg-fff mt15 padding-12 bbox">
+        <!-- 上 -->
+        <view class="w-100p f-b-c b-line1">
+            <!--左 -->
+            <view class="w-100p h-70 fc-c-s">
+                <view class="w-80p h-20 f-s-c">
+                    <text class="">小白白</text>
+                    <text class="ml5 fs-10 c-fff c-bg-green2 padding-2-4 bbox radius-2">贵宾一位</text>
+                </view>
+                <view class="w-80p h-30 f-s-c">
+                    <text class="fs-10">优惠券</text>
+                    <text class="fa fa-ticket c-red2 ml5"></text>
+                    <text class="fs-10 ml15">积分</text>
+                    <text class="fw-600 ml5">58</text>
+                </view>
+            </view>
+            <!-- 右 -->
+            <text class="fa fa-qrcode c-fff w-45 h-40 c-bg-yellow3 f-c-c fs-20 radius-20"></text>
+        </view>
+        <!-- 下 -->
+        <view class="w-100p mt15 f-s-c">
+            <text class="fw-600 fs-12 c-yellow3 mr5">我的特权</text>
+            <text class="fs-12">那天，我听到了种子破土的声音，又细微又坚定</text>
+            <text class="fa fa-angle-right fa-lg mlauto c-gray1"></text>
+        </view>
+    </view>
+
+    <!-- 功能项 -->
+    <view class="w-100p mt15 c-bg-fff padding-12 bbox">
+
+        <!-- 上 -->
+        <!-- 这个线过长，换种方式 -->
+        <view class="w-100p h-60 f-c-c relative">
+            <!-- 背景图片 -->
+            <image src="/images/icon.svg" class="absolute w-60 h-60 right-30" />
+            <view class="w-50p h-100p fc-c-c z-index-2">
+                <text class="fw-600">到店自取</text>
+                <text class="fs-10 mt10">提前下单免排队</text>
+            </view>
+            <text class="w-1 h-40 c-bg-gray1 z-index-2"></text>
+            <view class="w-50p h-100p fc-c-c z-index-2">
+                <text class="fw-600">外送</text>
+                <text class="fs-10 mt10">送货上门</text>
+            </view>
+        </view>
+        <!-- 下 横向滚动 -->
+        <!-- 功能栏的这个滚动位置有些问题 -->
+        <!-- 应该是填满才对，这里换别的方法，加一层-->
+        <scroll-view class="mt15 c-bg-red0" enable-flex="{{true}}" scroll-x="{{true}}">
+            <view class="h-90 w-100p f-s-c">
+                <view wx:for="{{6}}" class="f-shrink c-bg-red5 w-70 h-100p fc-c-c">
+                    <!-- 这里简单处理 需要占位 -->
+                    <text class="fs-10 h-10 c-bg-yellow2 c-fff">{{index=="0"?'18员入群礼':''}}</text>
+                    <text class="fa fa-cutlery c-yellow2 fa-2x mt5"></text>
+                    <text class="fs-10 mt5">社群</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+    <!-- 广告 ad -->
+    <view class="w-100p mt15 fc-s-s c-bg-fff relative">
+        <!-- 标签 -->
+
+        <text class="c-fff c-bg-000 padding-2-4 fs-12 absolute top-10 nleft-10">羊羊回归</text>
+        <image src="/images/bg-6.jpg" mode="aspectFill" class="w-100p h-180" />
+        <text class="mt10 ml10 to1 w-100p">@两个人从监狱的窗户往外看，一个看见了土地，一个看见了星星</text>
+        <text class="fs-12 mt8 ml10 mb10 c-gray2">风吹柳叶遮黄雀，薄翅不觉已落蝉</text>
+    </view>
+
+    <!-- 广告 ad -->
+    <view class="w-100p mt15 fc-s-s c-bg-fff">
+        <image src="/images/bg-2.jpg" mode="aspectFill" class="w-100p h-120" />
+    </view>
+
+    <text class="fs-12 c-gray1 mt20 mb20">Powered by 小白白</text>
+</view>
+

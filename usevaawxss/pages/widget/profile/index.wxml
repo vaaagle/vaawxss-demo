@@ -1,0 +1,48 @@
+<!-- 加个背景图 -->
+<image class="w-100p h-250 absolute" mode="aspectFill" src="/images/bg-0.png"></image>
+
+<!-- mt80 现在是通过设置顶部距离来调整位置关系，这里可以换成一个与背景图片宽高一致的盒子 -->
+<!-- 这么做的好处是，后面加上功能选线的时候，不需要再去设置顶部距离 -->
+<view class="w-100p h-250 c-bg-red2 fc-c-c">
+  <!-- 做头像 -->
+  <!-- 1.放头像照片的盒子 放个颜色好区分 布局，让头像居中,靠左  -->
+  <view class="w-100p h-80 f-s-c z-index-10">
+    <!-- 头像照片 留出点距离 圆角 -->
+    <image class="w-70 h-70 ml10 radius-35" src="/images/profile.png"></image>
+    <!-- 用户名昵称等，放个盒子放 布局-上下布局-->
+    <view class="w-70p h-100p fc-c-s ml10">
+      <!-- 用户名 -->
+      <view class="fs-18 c-green1 f-s-c w-100p">
+        <text>用户名</text>
+        <text class="fa fa-angle-right mlauto"></text>
+      </view>
+      <!-- 别的文字 文本溢出处理 一行-->
+      <view class="mt5 c-gray2 to1 w-100p">别的文字别的文字别别的文字别的文字别的文字的文字别的文字</view>
+    </view>
+  </view>
+</view>
+
+<!-- 添加功能选项 -->
+<!-- padding-both-16 两边的内边距16px 会占用宽度 所以加上bbox不占用宽度 -->
+<view class="w-92p h-50 c-bg-fff mt10 f-s-c padding-both-16 bbox fs-16 radius-6">
+  <text class="fa fa-question-circle-o"></text>
+  <text class="ml5">使用说明</text>
+  <text class="fa fa-angle-right mlauto"></text>
+</view>
+
+<!-- 加个下划线 -->
+<view class="w-92p h-50 c-bg-fff mt10 f-s-c padding-both-16 bbox fs-16 radius-6 b-line0">
+  <text class="fa fa-address-book"></text>
+  <text class="ml5">通讯录</text>
+  <text class="fa fa-angle-right mlauto"></text>
+</view>
+<view class="w-92p h-50 c-bg-fff f-s-c padding-both-16 bbox fs-16 radius-6 b-line0">
+  <text class="fa fa-image"></text>
+  <text class="ml5">作品</text>
+  <text class="fa fa-angle-right mlauto"></text>
+</view>
+<view class="w-92p h-50 c-bg-fff f-s-c padding-both-16 bbox fs-16 radius-6">
+  <text class="fa fa-gear"></text>
+  <text class="ml5">设置</text>
+  <text class="fa fa-angle-right mlauto"></text>
+</view>

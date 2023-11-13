@@ -1,0 +1,88 @@
+<!--背景图 -->
+<view class="w-100p h-210 c-bg-red1 absolute"></view>
+<!-- 头像 -->
+<view class="w-90p h-60 f-s-c z-index-2 mt90">
+  <image src="/images/profile.png" class="w-50 h-50 radius-25"/>
+  <view class="w-52p h-100p fc-c-s c-fff ml10">
+    <text class="">用户昵称</text>
+    <!-- 文本溢出处理 -->
+    <text class="fs-10 mt10 to1 w-100p">努力吧！就算再寂寞！也要努力活下去！</text>
+  </view>
+  <view class="w-70 h-30 f-c-c c-red1 c-bg-fff fs-12 radius-15 padding-both-10 mlauto">登录/注册</view>
+</view>
+
+<!-- 功能项 -->
+<view class="w-92p fc-c-c c-bg-fff radius-10 z-index-2 mt20">
+  <text class="w-90p h-30 f-s-c fw-600 mt10">我的资产</text>
+  <view class="w-100p f-s-c mt5 f-wrap">
+    <view class="w-33p h-50 fc-c-c f-shrink">
+      <view class="f-c-c">
+        <text class="fa fa-wpexplorer c-yellow3"></text>
+        <text class="ml5 fw-600">积分</text>
+      </view>
+      <text class="mt5 c-gray0 fs-10">查看积分</text>
+    </view>
+
+    <view class="w-33p h-50 fc-c-c f-shrink">
+      <view class="f-c-c">
+        <text class="fa fa-ticket c-yellow4"></text>
+        <text class="ml5 fw-600">优惠券</text>
+      </view>
+      <text class="mt5 c-gray0 fs-10">查看优惠券</text>
+    </view>
+
+    <view class="w-33p h-50 fc-c-c f-shrink">
+      <view class="f-c-c">
+        <text class="fa fa-rmb c-red4"></text>
+        <text class="ml5 fw-600">余额</text>
+      </view>
+      <text class="mt5 c-gray0 fs-10">查看余额</text>
+    </view>
+
+    <view class="w-33p h-50 fc-c-c f-shrink">
+      <view class="f-c-c">
+        <text class="fa fa-gift c-yellow2"></text>
+        <text class="ml5 fw-600">礼品卡</text>
+      </view>
+      <text class="mt5 c-gray0 fs-10 ">查看礼品卡</text>
+    </view>
+  </view>
+</view>
+
+<!-- 功能项 -->
+<view class="w-92p fc-c-c c-bg-fff radius-10 z-index-2 mt20">
+  <text class="w-90p h-30 f-s-c fw-600 mt10">我的订单</text>
+  <view class="w-100p f-s-c mt5 f-wrap">
+    <view class="w-25p h-60 fc-c-c f-shrink">
+      <text class="fa fa-lg fa-beer"></text>
+      <text class="mt10 c-gray8 fs-12">门店订单</text>
+    </view>
+
+    <view class="w-25p h-60 fc-c-c f-shrink">
+      <text class="fa fa-align-right fa-lg"></text>
+      <text class="mt10 c-gray8 fs-12">储值订单</text>
+    </view>
+
+    <view class="w-25p h-60 fc-c-c f-shrink">
+      <text class="fa fa-bank fa-lg"></text>
+      <text class="mt10 c-gray8 fs-12">买单订单</text>
+    </view>
+
+    <view class="w-25p h-60 fc-c-c f-shrink">
+      <text class="fa fa-bitbucket fa-lg"></text>
+      <text class="mt10 c-gray8 fs-12">拼券订单</text>
+    </view>
+
+    <view class="w-25p h-60 fc-c-c f-shrink">
+      <text class="fa fa-cc fa-lg"></text>
+      <text class="mt10 c-gray8 fs-12">券包订单</text>
+    </view>
+
+    <view class="w-25p h-60 fc-c-c f-shrink">
+      <text class="fa fa-cubes fa-lg"></text>
+      <text class="mt10 c-gray8 fs-12">商城订单</text>
+    </view>
+
+    
+  </view>
+</view>

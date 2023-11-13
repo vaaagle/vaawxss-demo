@@ -1,0 +1,49 @@
+<!-- 作品图片 -->
+<image src="/images/art-3.jpg" class="w-90p" mode="widthFix" />
+
+<!-- 作品参数 -->
+<view class="w-90p f-b-s mt10">
+    <!-- 左 -->
+    <view class="w-80p fc-s-s">
+        <text class="fs-14 fw-600">BLLLLLSO</text>
+        <text class="fs-12 mt5 c-gray3">BLLLLLSO TOOOOOER</text>
+        <text class="fs-10 mt5 c-gray3">1998</text>
+        <text class="fs-12 mt5 c-gray3">版画</text>
+        <text class="fs-10 mt5 c-gray3">70*70cm</text>
+        <text class="fs-12 mt5 c-gray3">ONE艺术</text>
+    </view>
+    <!-- 右 -->
+    <view class="w-20p fc-s-e">
+        <!-- 爱心 -->
+        <text class="fa fa-heart-o fs-16 mr5 mt5"></text>
+        <view class="w-100p f-e-c mt5">
+            <text class="fa fa-share-square-o mt3"></text>
+            <text  class="ml5">分享</text>
+        </view>
+    </view>
+</view>
+
+<!-- 价格行 -->
+<view class="w-90p f-s-c mt30 fs-16">
+    <text class="fw-600">￥8888</text>
+    <text class="fs-6 w2em5 f-c-c c-fff c-bg-gray8 ml5">包邮</text>
+    <text class="fa fa-comment-o ml15 fs-13"></text>
+    <text class="ml3 fs-13 c-gray5">立即咨询</text>
+</view>
+
+<!-- 按钮 -->
+<view class="w-92p f-s-c">
+    <view class="w-80 h-30 f-c-c border3 mt20">购买</view>
+</view>
+
+<!-- 分割线的实现方式之一 -->
+<text class="w-100p h-1 c-bg-gray0 mt20"></text>
+
+<!-- 商品参数，或者详情 -->
+<view class="w-92p fc-s-s mt20 c-gray1 fs-12 mb30">
+    <text class="mt10">BLLLLLSO</text>
+    <text class="mt10">BLLLLLSO.LOOOOOOOOM</text>
+    <text class="mt10">马来西亚</text>
+    <text class="mt10">版画 70*70cm 限量收藏版</text>
+    <text class="mt10">宠辱不惊，闲看庭前花开花落。去留无意，漫随天外云卷云舒</text>
+</view>

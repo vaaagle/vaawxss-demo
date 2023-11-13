@@ -1,0 +1,21 @@
+<!-- 背景色 -->
+<view class="w-100p h-140 c-bg-red6 absolute"></view>
+<view class="w-93p h-30 f-e-c z-index-2 mt20">
+  <text class="c-fff fa fa-gear fa-2x"></text>
+</view>
+
+<!-- 头像栏 -->
+<view class="shadow1 w-93p h-120 c-bg-fff radius-12 z-index-2 mt20 fc-e-c padding-14 bbox relative">
+  <image src="/images/profile.png" class="w-60 h-60 radius-30 absolute ntop-30"></image>
+  <text class="fw-600">用户昵称</text>
+  <view class="w-100p h-30 f-c-c mt20">
+    <view class="w-50p h-100p r-line1 f-c-c">
+      <text class="fa fa-image c-red6"></text>
+      <text class="ml10">相册</text>
+    </view>
+    <view class="w-50p h-100p f-c-c">
+      <text class="fa fa-heart c-red6"></text>
+      <text class="ml10">分享</text>
+    </view>
+  </view>
+</view>

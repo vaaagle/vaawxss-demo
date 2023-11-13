@@ -1,0 +1,60 @@
+<!-- 轮播图-自定义 -->
+<!-- 加轮播事件，记录当前轮播的图片对应下标 -->
+<swiper bindchange="swiperChange" class="w-100p h-300 absolute" autoplay="{{true}}">
+    <swiper-item wx:for="{{swiperList}}" class="f-c-c w-100p h-100p c-bg-yellow1">
+        <image src="{{item.img}}" class="w-100p h-100p" />
+    </swiper-item>
+</swiper>
+
+
+<!-- 先定义一个主要内容的盒子 -->
+<view class="w-92p fc-s-c z-index-2">
+    <!-- 自定义光标 -->
+    <!-- 添加当前轮播到的光标高亮和设置自定义样式 -->
+    <view class="w-92p h-10 f-s-c mt200">
+        <text wx:for="{{swiperList}}" class="{{curIndex == index ? 'w-15 c-bg-fff':'w-4 c-bg-gray0'}} h-4 mr3 radius-2"></text>
+    </view>
+
+    <!-- 注册登录模块 -->
+    <!-- 其实就是一张图片加个按钮 -->
+    <!-- 圆角不起作用 的原因是图片超出来了 两种方式效果一样-->
+    <view class="w-100p f-e-c h-80 radius-10 overflow c-bg-fff mt30 relative">
+        <image src="/images/bg-8.jpg" class="w-100p h-100p absolute" mode="aspectFill"/>
+        <!-- 按钮 -->
+        <text class="w-74 f-c-c fs-12 h-24  radius-30 mr14 c-bg-gray5 z-index-2 c-fff">注册/登录</text>
+    </view>
+
+    <!-- 功能模块 -->
+    <view class="w-100p h-170 mt15 c-bg-fff radius-10 f-c-c">
+        <!-- 左 -->
+        <view class="w-49p h-100p fc-s-c">
+            <text class="c-fff c-bg-yellow5 f-c-c fs-10 w-75 radius-0-5">解锁冰咖新品</text>
+            <text class="fs-16 fw-600 mt10">咖快</text>
+            <text class="fs-10 c-green4 mt3">在线点，到店取</text>
+            <image src="/images/avatar.png" class="mt10 w-80 h-80" />
+        </view>
+        <!-- 中间 -->
+        <text class="w-1 h-100 c-bg-gray0"></text>
+        <!-- 右 -->
+        <view class="w-49p h-100p fc-s-c">
+            <text class="c-fff c-bg-yellow5 f-c-c fs-10 w-75 radius-0-5">满20免运</text>
+            <text class="fs-16 fw-600 mt10">咖快</text>
+            <text class="fs-10 c-green4 mt3">在线点，到店取</text>
+            <image src="/images/paper.png" class="mt10 w-80 h-80" />
+        </view>
+    </view>
+
+    <!-- 再来个功能菜单 -->
+    <view class="mt15 h-120 f-c-c w-100p radius-10 c-bg-fff">
+        <view wx:for="{{4}}" class="w-25p h-100p fc-c-c">
+            <image src="/images/art-{{index}}.jpg" class="w-60 h-60 radius-30"/>
+            <text class="mt5 fs-12 fw-600">生活馆</text>
+            <text class="mt5 fs-10 c-gray1">夏日繁华星杯</text>
+        </view>
+
+    </view>
+
+</view>
+
+
+

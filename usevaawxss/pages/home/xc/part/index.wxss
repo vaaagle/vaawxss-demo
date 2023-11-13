@@ -1,0 +1,5 @@
+/* pages/home/xc/part/index.wxss */
+@import "/vaa.wxss";
+.nleft-10{
+    left: -10px;
+}

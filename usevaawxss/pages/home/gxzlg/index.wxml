@@ -1,0 +1,32 @@
+<!-- 背景 -->
+<view class="w-100p h-180 c-bg-red1 absolute"></view>
+
+<text class="z-index-2 c-fff fs-16 w-93p f-s-c">
+  欢迎来到GX展览馆
+</text>
+
+<image class="w-93p h-200 z-index-2 mt20 radius-12" src="/images/bg-0.png" mode="aspectFill"></image>
+
+<!-- 功能栏 -->
+<view class="w-93p f-b-c h-80 mt15">
+  <view class="w-48p h-100p radius-6 c-bg-linear-green c-fff f-c-c">
+    <text class="fa fa-edit fa-2x"></text>
+    <text class="fs-16 ml10">展馆介绍</text>
+  </view>
+  <view class="w-48p h-100p radius-6 c-bg-linear-blue c-fff f-c-c">
+    <text class="fa fa-map-marker fa-2x"></text>
+    <text class="fs-16 ml10">个人预约</text>
+  </view>
+</view>
+
+<!-- 功能栏 -->
+<view class="w-93p f-b-c h-80 mt15">
+  <view class="w-48p h-100p radius-6 c-bg-linear-yellow c-fff f-c-c">
+    <text class="fa fa-users fa-2x"></text>
+    <text class="fs-16 ml10">团队预约</text>
+  </view>
+  <view class="w-48p h-100p radius-6 c-bg-linear-gray c-fff f-c-c">
+    <text class="fa fa-user fa-2x"></text>
+    <text class="fs-16 ml10">我的</text>
+  </view>
+</view>

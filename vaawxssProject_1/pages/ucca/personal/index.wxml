@@ -1,0 +1,73 @@
+<!-- EN 吸顶 -->
+<text class="w-100p h-50 f-s-c padding-14 bbox c-bg-self fixed">EN</text>
+<!-- 占位 -->
+<text class="w-100p h-50 f-s-c padding-14 bbox c-bg-self">EN</text>
+
+<!-- 用户信息 -->
+<view class="w-93p c-bg-red1 radius-8 fc-s-c padding-10 bbox">
+    <!-- 头像 -->
+    <view class="w-100p f-s-c h-50 mt15">
+        <image src="/images/1.png" class="w-50 h-50 radius-25 c-bg-fff" />
+        <text class="ml10 c-fff fw-600">点击登录</text>
+    </view>
+    <view class="w-100p f-s-c h-50 mt15 mb10">
+        <view class="w-60p fc-c-s h-50">
+            <text class="ml10 c-fff fw-600">加入会员UCCCCCCCCA</text>
+            <text class="ml10 c-fff fs-12 mt6">畅想全年艺术展览</text>
+        </view>
+        <view class="w-90 f-c-c radius-14 h-25 c-bg-gray5 mlauto">
+            <text class="ml10 fs-12 c-fff">立即开通</text>
+            <text class="ml5 fa fa-arrow-circle-o-right c-fff fs-12 mt2"></text>
+        </view>
+    </view>
+</view>
+
+<!-- 功能菜单 -->
+<view class="w-93p f-c-c c-bg-fff radius-10 mt10">
+    <view class="w-23p h-90 fc-c-c">
+        <image src="/images/2.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">门票</text>
+    </view>
+    <view class="w-23p h-90 fc-c-c">
+        <image src="/images/3.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">预约码</text>
+    </view>
+    <view class="w-23p h-90 fc-c-c">
+        <image src="/images/4.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">优惠券</text>
+    </view>
+    <view class="w-23p h-90 fc-c-c">
+        <image src="/images/alphabet.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">订单</text>
+    </view>
+</view>
+
+<!-- 功能菜单 -->
+<view class="w-93p fc-s-c c-bg-fff radius-10 mt10 padding-14 bbox">
+    <view class="w-100p h-40 f-s-c c-gray2">
+        <text class="fa fa-asterisk"></text>
+        <text class="ml5  fs-12">消息中心</text>
+        <text class="fa fa-angle-right fa-lg mlauto"></text>
+    </view>
+    <view class="w-100p h-40 f-s-c c-gray2">
+        <text class="fa fa-balance-scale"></text>
+        <text class="ml5  fs-12">会员规则</text>
+        <text class="fa fa-angle-right fa-lg mlauto"></text>
+    </view>
+    <view class="w-100p h-40 f-s-c c-gray2">
+        <text class="fa fa-battery-full"></text>
+        <text class="ml5  fs-12">关于我们</text>
+        <text class="fa fa-angle-right fa-lg mlauto"></text>
+    </view>
+    <view class="w-100p h-40 f-s-c c-gray2">
+        <text class="fa fa-black-tie"></text>
+        <text class="ml5  fs-12">联系客服</text>
+        <text class="fa fa-angle-right fa-lg mlauto"></text>
+    </view>
+    <view class="w-100p h-40 f-s-c c-gray2">
+        <text class="fa fa-camera-retro"></text>
+        <text class="ml5  fs-12">关注我们</text>
+        <text class="fa fa-angle-right fa-lg mlauto"></text>
+    </view>
+</view>
+

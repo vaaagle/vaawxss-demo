@@ -1,0 +1,53 @@
+<text class="w-93p h-80 f-c-c">登录/注册会员可以查看会员码/优惠券/订单/个人资料/StyleHint等更多会员权益功能哦</text>
+
+<view class="w-93p h-40 c-bg-gray8 f-c-c c-fff">登录/注册</view>
+
+<view class="w-100p h-50 c-bg-fff mt20 shadow1 f-s-c padding-both-14 bbox">
+  <text class="fa fa-ticket fa-lg"></text>
+  <text class="ml10 c-gray8">优惠券</text>
+  <text class="fa fa-angle-right fa-2x mlauto"></text>
+</view>
+
+<view class="w-100p fc-s-c c-bg-fff mt15">
+  <text class="w-100p h-50 f-s-c padding-both-14 bbox fw-600">订单</text>
+  <view class="w-100p h-50 c-bg-fff f-s-c padding-both-14 bbox b-line0">
+    <text class="fa fa-briefcase fa-lg"></text>
+    <text class="ml10 c-gray8">购物车</text>
+    <text class="fa fa-angle-right fa-2x mlauto"></text>
+  </view>
+
+  <view class="w-100p h-50 c-bg-fff f-s-c padding-both-14 bbox b-line0">
+    <text class="fa fa-bar-chart fa-lg"></text>
+    <text class="ml10 c-gray8">图表</text>
+    <text class="fa fa-angle-right fa-2x mlauto"></text>
+  </view>
+
+  <view class="w-100p h-50 c-bg-fff f-s-c padding-both-14 bbox b-line0">
+    <text class="fa fa-bell fa-lg"></text>
+    <text class="ml10 c-gray8">铃声</text>
+    <text class="fa fa-angle-right fa-2x mlauto"></text>
+  </view>
+
+</view>
+
+<view class="w-100p fc-s-c c-bg-fff mt15">
+  <text class="w-100p h-50 f-s-c padding-both-14 bbox fw-600">styleENI</text>
+  <view class="w-100p h-50 c-bg-fff f-s-c padding-both-14 bbox b-line0">
+    <text class="fa fa-briefcase fa-lg"></text>
+    <text class="ml10 c-gray8">购物车</text>
+    <text class="fa fa-angle-right fa-2x mlauto"></text>
+  </view>
+
+  <view class="w-100p h-50 c-bg-fff f-s-c padding-both-14 bbox b-line0">
+    <text class="fa fa-bar-chart fa-lg"></text>
+    <text class="ml10 c-gray8">图表</text>
+    <text class="fa fa-angle-right fa-2x mlauto"></text>
+  </view>
+
+  <view class="w-100p h-50 c-bg-fff f-s-c padding-both-14 bbox b-line0">
+    <text class="fa fa-bell fa-lg"></text>
+    <text class="ml10 c-gray8">铃声</text>
+    <text class="fa fa-angle-right fa-2x mlauto"></text>
+  </view>
+
+</view>

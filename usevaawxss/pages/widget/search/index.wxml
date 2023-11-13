@@ -1,0 +1,39 @@
+<!-- 搜索框1 -->
+<view class="w-100p h-60 f-c-c c-bg-fff">
+  <!-- 灰色框 -->
+  <view class="w-90p h-40 c-bg-gray0 radius-4 f-s-c c-gray2 padding-both-12 bbox">
+    <text class="fa fa-search fa-lg "></text>
+    <input class="ml10 w-89p" placeholder="后乳" />
+  </view>
+</view>
+
+<!-- 搜索框2 -->
+<view class="w-100p h-60 f-s-c mt10 padding-both-12 bbox c-gray2">
+  <text class="fa fa-angle-left fa-2x"></text>
+  <view class="w-80p h-40 radius-20 padding-both-12 bbox f-s-c c-bg-gray0 ml10">
+    <text class="fa fa-search fa-lg"></text>
+    <input placeholder="人间四月天" class="ml10 w-80p" />
+  </view>
+  <text class="mlauto fw-600">搜索</text>
+</view>
+
+<!-- 搜索框3 -->
+<view class="w-100p h-60 f-s-c padding-both-12 bbox c-bg-blue5 mt10">
+  <view class="h-40 w-90p f-s-c c-bg-fff radius-20 overflow">
+    <text class="fa fa-search fa-lg ml8 c-blue3"></text>
+    <input placeholder="" class="w-80p h-100p ml10"/>
+    <view class="h-100p w-90 c-bg-green5 c-fff mlauto f-c-c">搜索</view>
+  </view>
+  <text class="mlauto c-fff">清空</text>
+</view>
+
+<!-- 搜索框4 -->
+<view class="w-100p h-60 f-s-c c-bg-fff mt10 padding-both-12 bbox">
+  <view class="h-40 w-86p f-s-c border0 padding-both-12 bbox">
+      <text class="fa fa-search fa-lg c-gray0"></text>
+      <input placeholder="" class="w-85p h-100p ml5" />
+      <text class="fa fa-times-circle fa-lg c-gray0 mlauto"></text>
+  </view>
+  <!-- <view class="w-40 h-40 c-bg-gray0 c-gray1 mlauto radius-6 f-c-c fs-30">+</view> -->
+  <text class="fa fa-plus-square c-gray0 fs-40 mlauto"></text>
+</view>

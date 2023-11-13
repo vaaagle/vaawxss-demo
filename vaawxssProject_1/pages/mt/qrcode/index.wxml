@@ -1,0 +1,134 @@
+<!-- 标签栏 -->
+<!-- 吸顶 -->
+<view class="w-100p c-bg-fff padding-both-14 bbox f-s-c absolute">
+   <text class="fa fa-angle-left fa-2x"></text>
+   <view class="w-90 h-40 fc-c-c">
+    <text class="fs-16 fw-600">单车</text>
+    <text class="w-30 h-3 mt3"></text>
+   </view>
+   <view class="w-90 h-40 fc-c-c">
+    <text class="fs-16 fw-600">电单车</text>
+    <text class="c-bg-yellow0 w-30 h-3 mt3"></text>
+   </view>
+   <view class="w-90 h-40 fc-c-c">
+    <text class="fa fa-user-o fa-lg"></text>
+   </view>
+</view>
+<!-- 占位，absolute之后会浮动上去，不会占用高度，所以需要用一个来占位 -->
+<view class="w-100p h-40 c-bg-fff padding-both-14 bbox f-s-c">
+</view>
+
+<!-- 地图 -->
+<view class="w-93p h-180 c-bg-blue0 mt8 radius-12 overflow relative">
+  <text class="fa fa-square-o absolute z-index-2 right-10 top-10 fa-lg w-25 h-25 c-bg-fff f-c-c radius-5"></text>
+  <map class="w-100p h-100p"></map>
+  <view class="radius-10 absolute left-10 bottom-10 h-30 c-bg-blue0 z-index-2 f-s-c">
+    <image src="/images/icon (11).png" class="w-30 h-30 c-bg-fff radius-8 padding-5 bbox" />
+    <text class="fs-12 mr10 c-blue8 ml5">骑行规范，安全常在</text>
+  </view>
+</view>
+
+<!-- 功能项：用自定义轮播图存放 -->
+<!-- 添加轮播事件 -->
+<swiper bindchange="swiperchange" class="w-100p h-80 c-bg-fff f-c-c">
+  <swiper-item class="w-100p h-100p f-c-c">
+    <view class="w-100p h-100p f-s-c">
+      <view class="w-25p h-100p fc-c-c">
+        <image src="/images/1.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">地图找车</text>
+      </view>
+      <view class="w-25p h-100p fc-c-c">
+        <image src="/images/2.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">搜索找车</text>
+      </view>
+      <view class="w-25p h-100p fc-c-c">
+        <image src="/images/3.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">特惠</text>
+      </view>
+      <view class="w-25p h-100p fc-c-c">
+        <image src="/images/4.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">计价规则</text>
+      </view>
+      <view class="w-25p h-100p fc-c-c">
+        <image src="/images/5.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">坏车上报</text>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item class="w-100p h-100p f-c-c">
+    <view class="w-100p h-100p f-s-c">
+      <view class="w-25p h-100p fc-c-c">
+        <image src="/images/c.png" class="w-30 h-30" />
+        <text class="fs-12 c-gray1 mt8">地图找车</text>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
+<!-- 轮播的自定光标 -->
+<!-- 这里就半动态实现了，因为上面轮播页面只有2个 -->
+<!-- 加当前轮播下标对应的元素高亮 -->
+<view class="h-5 f-c-c mt-10">
+  <text class="{{curIndex==0 ? 'w-20 c-bg-yellow0' : 'w-10 c-bg-gray0'}} h-100p  radius-5 mr5"></text>
+  <text class="{{curIndex==1 ? 'w-20 c-bg-yellow0' : 'w-10 c-bg-gray0'}} h-100p radius-5 mr5"></text>
+</view>
+
+<!-- 特惠购卡 -->
+<view class="w-93p h-160 c-bg-yellow3 mt10 radius-12 padding-12 bbox">
+  <view class="w-100p h-20 f-s-c">
+    <text class="fw-600 c-red8">特惠购卡</text>
+    <text class="fs-12 c-red8 mlauto">更多</text>
+    <text class="fa c-red8 fa-angle-right ml5"></text>
+  </view>
+  <!-- 滚动栏 -->
+  <scroll-view class="w-100p mt10" enable-flex="{{true}}" scroll-x="{{true}}">
+    <view class="w-100p f-s-c">
+        <!-- 单项 -->
+        <!-- 循环 -->
+        <!-- 细节再美化啦 -->
+        <view wx:for="{{3}}" class="f-shrink padding-12 relative bbox fc-c-s radius-8 self-w h-100p c-bg-fff mr10 c-bg-fff">
+          <text class="fs-10 c-red2 c-bg-yellow1 absolute right-0 top-0">低至1.24元/次</text>
+          <text class="c-red2 fs-12 w-150 to1">生活就是不断实现自我的过程</text>
+          <view class="w-100p f-s-c">
+            <text>38.88元</text>
+            <text class="fs-10 c-gray0 ml5 t-line">38.88元</text>
+          </view>
+          <view class="w-100p h-30 f-b-e">
+            <text class="fs-10 c-red2 c-bg-yellow2">低至1.24元/次</text>
+            <text class="h-30 w-60 f-c-c radius-15 border0">去购买</text>
+          </view>
+        </view>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- ad 信息栏 -->
+<view class="w-93p h-120 mt10 radius-12 overflow relative fc-c-s">
+  <image src="/images/bg-0.png" class="w-100p h-100p absolute" />
+  <text class="fw-600 z-index-2 ml14">生活就是不断实现自我的过程</text>
+  <view class="w-100p h-30 f-s-c z-index-2">
+    <text class="fs-12 c-gray0 z-index-2 ml14">生活就是不断实现自我的过程</text>
+    <view class="w-60 h-14 c-bg-yellow2 f-c-c radius-7">
+      <text class="fs-12 c-fff">抢购</text>
+      <text class="fs-12 fa fa-angle-right c-fff ml3"></text>
+    </view>
+  </view>
+</view>
+
+<!-- 占位 -->
+<text class="w-100p h-150"></text>
+
+<!-- 按钮部分 -->
+<view class="fc-s-c w-100p h-120 radius-20-0 c-bg-blue0 fixed bottom-0">
+  <image src="/images/c.png" class="w-30 h-30 absolute ntop-5 left-10" />
+  <view class="w-100p f-e-c h-50 padding-12 bbox">
+    <text class="fw-600 c-fff fs-14">生活就是不断实现自我的过程</text>
+    <text class="w-60 fs-12 f-c-c h-20 radius-10 border0 c-fff ml20">去开启</text>
+  </view>
+  <view class="w-100p f-c-c h-70 c-bg-fff radius-20-0">
+    <view class="w-80p h-40 f-c-c c-bg-yellow1 radius-20">
+      <text class="fa fa-qrcode fs-16 mt2"></text>
+      <text class="fw-600 ml10">扫码用车</text>
+    </view>
+  </view>
+
+</view>

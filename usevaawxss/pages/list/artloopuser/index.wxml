@@ -1,0 +1,33 @@
+<!-- 分析一下这个页面 -->
+<!-- 三部分 搜索框 列表 首字母 -->
+<!-- 列表有头像 名称 介绍 名称可以有1行或2行 介绍可以没有 介绍没有的时候名称是居中的 -->
+<!-- 介绍最多两行，溢出省略 -->
+
+<!-- 搜索框 -->
+<view class="w-92p h-40 f-s-c b-line1">
+    <text class="fa fa-search mr5 ml3"></text>
+    <input class="fs-13 w-90p" placeholder="搜索" />
+</view>
+
+<!-- 列表 -->
+<!-- 左边宽度是比右边小的，也就是不是居中对称 -->
+<!-- 大概这样 -->
+<view class="w-92p fc-s-s">
+    <!-- 循环一下 -->
+    <view wx:for="{{16}}" class="w-96p h-90 f-s-c b-line0">
+        <!-- 头像 -->
+        <image src="/images/profile.png" class="w-60 h-60 radius-30" />
+        <!-- 名称+介绍 -->
+        <view class="ml5 w-70p fc-c-s">
+            <text class="fw-600 fs-12">Add Full</text>
+            <!-- 整长一点的，测试溢出 -->
+            <text class="fs-12 c-gray2 mt5 to2">这个世界上没有忽然崩溃的感情，只有压弯骆驼的最后一根稻草。这个世界上没有忽然崩溃的感情，只有压弯骆驼的最后一根稻草。</text>
+        </view>
+    </view>
+</view>
+
+<!-- 首字母 -->
+<view class="w1em5 fc-c-c h-100p fixed right-8 top-0">
+    <!-- 循环一下懒得写了，用数字代替 -->
+    <text wx:for="{{26}}" class="c-gray1 mb3">{{index}}</text>
+</view>>

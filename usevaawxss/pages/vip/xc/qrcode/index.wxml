@@ -1,0 +1,58 @@
+<!-- 分析一下 -->
+<!-- 难点就是这个⚪的透明效果怎么实现 -->
+<!-- 看到了吧，这个位置是有圆角的，可知，分两段，上下两部分 -->
+<!-- 开始 -->
+<!-- 头像 -->
+<!-- 背景色 -->
+<!-- 这是底部对齐，非居中 -->
+<view class="w-92p f-s-e mt30">
+    <!-- profile -->
+    <image src="/images/profile.png" mode="aspectFit" class="w-60 h-60 radius-30" />
+    <view class="w-70p h-60 fc-e-s ml15 mb2">
+        <text class="fs-16">Hey，bro</text>
+        <text class="mt8 fs-9 h-12 c-bg-green2 c-fff padding-2-4 radius-2">小小贵宾</text>
+    </view>
+</view>
+
+<!-- 会员码区域 -->
+<!-- 圆角 -->
+<view class="w-92p h-380 c-bg-fff fc-c-c mt15 radius-2">
+    <text class="fs-16 mb20">到店出示会员码积累【积分】~</text>
+    <image src="/images/art-3.jpg" class="w-200 h-200" mode="leftTop" />
+    <text class="fs-12 c-gray1 mt20">每30秒自动刷新</text>
+</view>
+
+<!-- 下面部分 -->
+<view class="w-92p h-150 radius-2 fs-s-c">
+    <!-- 分3部分 -->
+    <view class="w-100p f-c-c h-70 relative gray-self ">
+        <view class="w-33p h-100p fc-c-c">
+            <text class="absolute ntop-10 c-bg-yellow6 c-fff padding-2-4 fs-10">充值有礼</text>
+            <text class="fw-600 fs-16">￥0</text>
+            <text class="c-gray0 fs-12 mt10">钱袋子</text>
+        </view>
+        <view class="w-33p h-100p fc-c-c">
+            <text class="fw-600 fs-16">￥0</text>
+            <text class="c-gray0 fs-12 mt10">卡片</text>
+        </view>
+        <view class="w-33p h-100p fc-c-c">
+            <text class="fw-600 fs-16">99</text>
+            <text class="c-gray0 fs-12 mt10">券券</text>
+        </view>
+    </view>
+    <!-- 因为好像有些间隙，所以向上移动一丢丢 -->
+    <!-- part2 圆圈 矩形 圆圈 -->
+    <!-- 好像不太对，换个思路，用两个跟背景一样颜色的圆圈，造成视觉上透视的错觉 -->
+    <view class="mt-1 w-100p h-20 f-c-c gray-self relative">
+        <text class="w-20 h-20 radius-10 c-bg-y absolute nleft-10"></text>
+        <view class="h-2 w-90p line-bg"></view>
+        <text class="w-20 h-20 radius-10 c-bg-y absolute nright-10"></text>
+    </view>
+    <!-- part3 -->
+    <view class="mt-1 w-100p f-s-c h-60 gray-self padding-14 bbox">
+        <text class="fa fa-lg fa-drivers-license-o c-yellow3"></text>
+        <text class="ml10 fs-14">使用余额支付（LALALALA）</text>
+        <text class="fa fa-circle fs-20 mlauto c-gray0"></text>
+    </view>
+
+</view>

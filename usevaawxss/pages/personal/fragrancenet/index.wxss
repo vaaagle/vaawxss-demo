@@ -1,0 +1,6 @@
+/* pages/personal/fragrancenet/index.wxss */
+@import "/vaa.wxss";
+
+.t{
+  text-decoration: line-through;
+}

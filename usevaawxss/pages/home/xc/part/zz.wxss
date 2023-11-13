@@ -1,0 +1,9 @@
+/* pages/home/xc/part/zz.wxss */
+@import "/vaa.wxss";
+
+.h-100vh{
+    height: 100vh;
+}
+.c-bg-zz{
+    background-color: #00000077;
+}

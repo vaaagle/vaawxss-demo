@@ -1,0 +1,63 @@
+<!-- 吸顶的 菜单滚动栏 -->
+<scroll-view class="h-40 f-s-c w-100p" scroll-x="{{true}}">
+    <view class="h-100p f-s-c w-100p c-bg-fff padding-both-12 bbox">
+        <!-- 循环 -->
+        <!-- 加切换事件 传值 -->
+        <view bindtap="changeMenu" data-type="{{item.type}}" wx:for="{{menuList}}" class="h-40 mr20 fc-e-c f-shrink">
+            <text class="{{curType == item.type ? 'c-green6' :''}} ">{{item.name}}</text>
+            <text class="{{curType == item.type ? 'c-bg-green6' :''}} h-3 w3em mt10"></text>
+        </view>
+    </view>
+</scroll-view>
+
+<!-- 列表  type=0的时候展示-->
+<!-- 循环 -->
+<view wx:if="{{curType == 0}}" wx:for="{{3}}" class="w-94p fc-s-c padding-14 bbox c-bg-fff radius-10 mt15">
+    <view class="w-100p h-20 f-s-c">
+        <text class="fa fa-map-marker c-green6"></text>
+        <text class="ml5 fw-600 fs-12">兴业银行大厦</text>
+        <text class="mlauto c-gray1 fs-12">已完成</text>
+    </view>
+    <view class="w-100p h-20 f-s-c">
+        <text class="c-gray1 fs-12">一楼</text>
+        <text class="mlauto c-gray1 fs-12">2023-03-20 15:02</text>
+    </view>
+    <view class="w-100p h-60 f-s-c">
+        <image src="/images/o.png" class="w-40 h-40 radius-20"/>
+        <view class="w-65p h-100p fc-c-s ml10">
+            <text class="c-gray8 fs-12">抹茶咳咳碎片星冰乐©</text>
+            <text class="mt8 c-gray1 fs-12 to1 w-100p">超大杯/全脂牛奶/标准搅拌打曦奶油超大杯/全脂牛奶/标准搅拌打曦奶油</text>
+        </view>
+        <view class="w-20p fs-10 h-100p fc-c-e mlauto">
+            <text class="c-gray8">￥49</text>
+            <text class="mt8 c-gray1 fw-600">共1件</text>
+        </view>
+    </view>
+    <!-- 按钮 -->
+    <view class="w-100p h-60 f-e-c">
+        <text class="f-c-c c-green6 w6em h-25 fs-12 fw-600 radius-15 border-green mr10">去开票</text>
+        <text class="f-c-c c-bg-green6 w6em h-25 fs-12 fw-600 radius-15 c-fff">再来一单</text>
+    </view>
+
+</view>
+
+<!-- 列表  type=2的时候展示-->
+<!-- 结构近乎一样，直接拿下来 -->
+<view wx:if="{{curType == 2}}" wx:for="{{3}}" class="w-94p fc-s-c padding-14 bbox c-bg-fff radius-10 mt15">
+    <view class="w-100p h-20 f-s-c">
+        <text class="ml5 fw-600 fs-12">南宁三街两巷店</text>
+        <text class="mlauto c-green6 fw-600 fs-12">外带</text>
+    </view>
+    <view class="w-100p h-20 f-s-c">
+        <text class="c-gray1 fs-12">2023.03.15 15:02</text>
+        <text class="mlauto c-gray1 fs-12">￥41.15</text>
+    </view>
+    <!-- 按钮 -->
+    <view class="w-100p h-60 f-e-c">
+        <text class="f-c-c c-green6 w6em h-25 fs-12 fw-600 radius-15 border-green mr10">开发票</text>
+        <text class="f-c-c c-bg-green6 w6em h-25 fs-12 fw-600 radius-15 c-fff">查看详情</text>
+    </view>
+
+</view>
+
+<text class="fs-12 c-gray2 mt30">没有更多订单了~</text>

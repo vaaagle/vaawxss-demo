@@ -1,0 +1,11 @@
+/* pages/wrm/home/index.wxss */
+/* 需要自己下载 https://github.com/vaaagle/VaaWxss */
+@import "/vaa.wxss";
+
+.t-throuth{
+  text-decoration: line-through;
+}
+.border-self{
+  border:1px solid red;
+  padding:0 2px;
+}

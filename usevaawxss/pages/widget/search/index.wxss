@@ -1,0 +1,5 @@
+/* pages/widget/search/index.wxss */
+@import "/vaa.wxss";
+.fs-40{
+  font-size: 40px;
+}

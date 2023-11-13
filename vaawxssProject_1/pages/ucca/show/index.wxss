@@ -1,0 +1,5 @@
+/* pages/ucca/show/index.wxss */
+@import "/vaa.wxss";
+.c-bg-self{
+    background-color: #f8f8f8;
+}

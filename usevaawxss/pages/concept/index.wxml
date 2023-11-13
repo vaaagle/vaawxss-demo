@@ -1,0 +1,17 @@
+<!-- 背景色 -->
+<view class="c-bg-red0"></view>
+
+<!-- 背景色 + 宽度 -->
+<view class="c-bg-red0 w-100p"></view>
+
+<!-- 背景色 + 宽度 + 高度-->
+<view class="c-bg-red0 w-100p h-60">背景色 + 宽度 + 高度</view>
+
+<!-- 背景色 + 宽度 + 高度 + flex布局（居中）-->
+<view class="c-bg-red2 w-100p h-60 f-c-c">背景色 + 宽度 + 高度</view>
+
+<!-- 背景色 + 宽度 + 高度 + flex布局（靠左）-->
+<view class="c-bg-red3 w-100p h-60 f-s-c">背景色 + 宽度 + 高度</view>
+
+<!-- 背景色 + 宽度 + 高度 + flex布局（靠右）-->
+<view class="c-bg-red4 w-100p h-60 f-e-c">背景色 + 宽度 + 高度</view>

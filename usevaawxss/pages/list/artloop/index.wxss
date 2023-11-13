@@ -1,0 +1,5 @@
+/* pages/list/artloop/index.wxss */
+@import "/vaa.wxss";
+page{
+    background-color: #fff;
+}

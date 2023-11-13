@@ -1,0 +1,9 @@
+/* pages/list/starbucks/goods/index.wxss */
+@import "/vaa.wxss";
+
+page{
+    background-color: #e8e5e5;
+}
+.border-green{
+    border:1px solid #006241;
+}

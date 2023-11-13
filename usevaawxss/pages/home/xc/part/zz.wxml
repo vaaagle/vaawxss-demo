@@ -1,0 +1,13 @@
+<!-- 半透明幕布 + 图片 + 关闭图标 -->
+
+<view>假设这是整个页面内容</view>
+
+<!-- 幕布 -->
+<!-- h-100p无效的原因是因为我们没有设置父级的一个高度，它计算不出来 -->
+<view class="w-100p h-100vh fc-c-c c-bg-zz absolute">
+    <!-- 图片 -->
+    <image class="w-75p radius-18" src="/images/art-1.jpg" mode="widthFix" />
+    <!-- 关闭图标 -->
+    <text class="fa fa-close w-30 h-30 f-c-c c-bg-gray2 mt20 c-fff radius-15"></text>
+</view>
+

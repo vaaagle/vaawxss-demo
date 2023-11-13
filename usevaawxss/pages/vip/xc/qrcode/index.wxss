@@ -1,0 +1,20 @@
+/* pages/vip/xc/qrcode/index.wxss */
+@import "/vaa.wxss";
+page{
+    background-color: #f6ead6;
+}
+.c-bg-y{
+    background-color: #f6ead6;
+}
+.gray-self{
+    background-color: #fafafa;
+}
+.nleft-10{
+    left: -10px;
+}
+.nright-10{
+    right: -10px;
+}
+.line-bg{
+    background-color: #f1f1f1;
+}

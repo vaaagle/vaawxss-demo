@@ -1,0 +1,49 @@
+<!-- 背景图 -->
+<image src="/images/bg-0.png" mode="aspectFill" class="w-100p h-230 absolute"></image>
+
+<view class="w-93p h-100 c-bg-fff radius-14 z-index-1 mt150 padding-12 bbox fc-e-c">
+  <view class="w-100p h-40 c-bg-blue1 radius-20 c-fff f-c-c">
+    <view class="w-50p h-50p f-c-c r-line0">
+      <text class="fa fa-rmb mt2"></text>
+      <text class="ml5">我的账户</text>
+    </view>
+    <view class="w-50p h-50p f-c-c">
+      <text class="fa fa-ticket mt2"></text>
+      <text class="ml5">优惠券</text>
+    </view>
+  </view>
+</view>
+
+<!-- 订单中心 -->
+<view class="w-93p h-100 c-bg-fff radius-14 z-index-1 mt10 padding-12 bbox fc-c-c">
+  <text>订单中心</text>
+  <view class="w-100p h-40 f-a-c mt10 c-gray2">
+    <view class="w-25p h-100p fc-a-c">
+      <text class="fa fa-list-alt fa-lg"></text>
+      <text>全部</text>
+    </view>
+    <view class="w-25p h-100p fc-a-c">
+      <text class="fa fa-clock-o fa-lg"></text>
+      <text>未付款</text>
+    </view>
+    <view class="w-25p h-100p fc-a-c">
+      <text class="fa fa-check-square-o fa-lg"></text>
+      <text>已付款</text>
+    </view>
+    <view class="w-25p h-100p fc-a-c">
+      <text class="fa fa-truck fa-lg"></text>
+      <text>待收货</text>
+    </view>
+  </view>
+</view>
+
+<!-- 常用入口 -->
+<view class="w-93p h-100 c-bg-fff radius-14 z-index-1 mt10 padding-12 bbox fc-c-c">
+  <text>常用入口</text>
+  <view class="w-100p h-40 f-s-c mt10 c-gray2">
+    <view class="w-25p h-100p fc-a-c">
+      <text class="fa fa-map-marker fa-lg"></text>
+      <text>我的地址</text>
+    </view>
+  </view>
+</view>

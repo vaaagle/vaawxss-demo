@@ -1,0 +1,14 @@
+<!-- 做按钮 -->
+<!-- w-90p 宽度 90% -->
+<!-- h-50 高度 50px -->
+<!-- c-bg-blue2  c-color bg-background blue2-蓝2-->
+<!-- c-fff c-color fff-白色 -->
+<!-- f-c-c f-flex c-center -->
+<!-- radius-25 border-radius 25px -->
+<!-- fs-16 fs-font-size 16px -->
+<!-- fw-600 fw-font-weight 600 -->
+<view class="w-90p h-50 c-bg-blue2 f-c-c radius-25 c-fff fs-16 fw-600">按钮</view>
+
+<!-- 置于页面底部 -->
+<!-- fixed bottom-0 -->
+<view class="w-90p h-50 c-bg-blue2 f-c-c radius-25 c-fff fs-16 fw-600 fixed bottom-0 mb10">按钮</view>

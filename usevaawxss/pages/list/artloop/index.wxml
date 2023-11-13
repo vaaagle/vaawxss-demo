@@ -1,0 +1,70 @@
+<!-- 搜索框 -->
+<view class="w-92p h-40 f-s-c b-line0">
+    <text class="fa fa-search c-gray2"></text>
+    <input class="ml5 w-92p fs-12" placeholder="搜索" />
+</view>
+
+<!-- 标签栏 -->
+<view class="w-80p f-c-c h-35 mt15 border2">
+    <text class="w-50p h-100p f-c-c">艺术原作</text>
+    <text class="w-50p h-100p f-c-c c-fff c-bg-000">艺术产品</text>
+</view>
+
+<!-- 艺术作品列表 art list -->
+<!-- 这是普通列表，一般图片宽高都一致，没有错位 -->
+<view class="w-92p f-b-c f-wrap mt15">
+    <!-- 循环一下 -->
+    <view wx:for="{{4}}" class="w-48p fc-s-s">
+        <image src="/images/art-0.jpg" class="w-100p" mode="aspectFit" />
+        <text class="fs-12 mt5">WANWAN</text>
+        <text class="fs-12 c-gray2 mt5">世界无奇不有系列</text>
+        <text class="fs-12 c-gray2 mt5">2023</text>
+        <view class="w-100p f-b-c c-gray2 mt5">
+            <text class="fs-12">￥3800</text>
+            <text class="fa fa-heart-o"></text>
+        </view>
+    </view>
+</view>
+
+<!-- 瀑布流列表实现方式之最简单方式：分两列，左边列和右边列 -->
+<!-- 标签栏 -->
+<view class="w-80p f-c-c h-35 mt15 border2">
+    <text class="w-50p h-100p f-c-c">艺术原作</text>
+    <text class="w-50p h-100p f-c-c c-fff c-bg-000">艺术产品</text>
+</view>
+<view class="w-92p f-b-s f-wrap mt15">
+    <!-- 分2列 -->
+    <view class="w-50p fc-s-s">
+        <!-- 循环一下 -->
+        <view wx:for="{{4}}" class="w-90p fc-s-s">
+            <image src="/images/art-{{index}}.jpg" class="w-100p" mode="widthFix" />
+            <text class="fs-12 mt5">WANWAN</text>
+            <text class="fs-12 c-gray2 mt5">世界无奇不有系列</text>
+            <text class="fs-12 c-gray2 mt5">2023</text>
+            <view class="w-100p f-b-c c-gray2 mt5">
+                <text class="fs-12">￥3800</text>
+                <text class="fa fa-heart-o"></text>
+            </view>
+        </view>
+    </view>
+
+    <view class="w-50p fc-s-e">
+        <!-- 循环一下 -->
+        <view wx:for="{{4}}" class="w-90p fc-s-e">
+            <image src="/images/art-0.jpg" class="w-100p" mode="widthFix" />
+            <text class="fs-12 mt5">WANWAN</text>
+            <text class="fs-12 c-gray2 mt5">世界无奇不有系列</text>
+            <text class="fs-12 c-gray2 mt5">2023</text>
+            <view class="w-100p f-b-c c-gray2 mt5">
+                <text class="fs-12">￥3800</text>
+                <text class="fa fa-heart-o"></text>
+            </view>
+        </view>
+    </view>
+    
+</view>
+
+
+<!-- 技术支持 -->
+<text class="c-gray1 fs-12 mt50 fa fa-heart mb30">Powered by - 小白白</text>
+

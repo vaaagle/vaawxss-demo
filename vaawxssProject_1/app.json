@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/ucca/show/index",
+    "pages/ucca/personal/index",
+    "pages/mt/qrcode/index",
+    "pages/wrm/home/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

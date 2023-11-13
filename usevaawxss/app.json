@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/concept/index",
+    "pages/widget/button/index",
+    "pages/widget/profile/index",
+    "pages/widget/search/index",
+    "pages/personal/cjmp/index",
+    "pages/detail/cjmp/index",
+    "pages/personal/vart/index",
+    "pages/home/gxzlg/index",
+    "pages/personal/ymhz/index",
+    "pages/personal/sfhhzt/index",
+    "pages/vip/uniqlo/index",
+    "pages/personal/usjz/index",
+    "pages/personal/jwyb/index",
+    "pages/personal/fragrancenet/index",
+    "pages/list/artloop/index",
+    "pages/detail/artloop/index",
+    "pages/list/artloopuser/index",
+    "pages/home/xc/part/zz",
+    "pages/home/xc/part/index",
+    "pages/vip/xc/qrcode/index",
+    "pages/home/starbucks/index",
+    "pages/list/starbucks/goods/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

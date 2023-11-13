@@ -1,0 +1,9 @@
+/* 引入样式库，需要自己去下载https://github.com/vaaagle/VaaWxss*/
+@import "/vaa.wxss";
+
+.self-w{
+  width: 270px;
+}
+.t-line{
+  text-decoration: line-through;
+}

@@ -1,0 +1,221 @@
+<!-- 分析 -->
+<!-- 顶部使用了 吸顶 轮播图 -->
+<!-- 分为了两部分，检索框这部分和下面的轮播图 所以先定义两个结构-->
+<!-- 没有定义flex所以没有显示 -->
+<!-- 布局方向应该是 上下 -->
+<!-- 吸顶效果,图层设置大点 -->
+<view class="w-100p h-120 relative fc-c-c z-index-200 fixed">
+  <!-- 背景图片 -->
+  <!-- 通过mode实现不了效果，还需要裁剪图片 -->
+  <!-- absolute 将元素设置为absolute定位，也就是会浮动 相对定位的元素就是设置为relative的这个 -->
+  <!-- 改为动态 -->
+  <image src="{{bg1}}" class="w-100p h-100p absolute" />
+  <!-- 这里还有个定位信息 -->
+  <!-- 图层位置 -->
+  <view class="w-100p f-s-c z-index-2 padding-14 bbox c-fff">
+    <text class="fa fa-map-marker fa-lg"></text>
+    <!-- 省略号说明做了文本溢出的处理，所以需要加个宽度，作为溢出的宽度界定 -->
+    <text class="ml10 fw-600 w-150 to1">花之蕊花之蕊花之蕊花之蕊花之蕊</text>
+  </view>
+  <!-- 检索框 -->
+  <view class="w-100p h-30 f-s-c z-index-2 padding-both-14 bbox">
+    <view class="w-90p h-30 radius-15 c-bg-fff f-s-c">
+      <!-- 搜索icon + input输入框 + 搜索按钮 -->
+      <text class="fa fa-search c-gray0 ml12"></text>
+      <input class="w-70p h-100p fs-12 ml5" placeholder="检索" />
+      <text class="mlauto mr1 f-c-c fs-12 w-20p h-98p radius-15 c-fff c-bg-red1">搜索</text>
+    </view>
+    <!-- 还有个扫码的icon -->
+    <text class="fa fa-bars c-fff fa-2x mlauto"></text>
+  </view>
+</view>
+<!-- 占位 -->
+<view class="w-100p h-120 relative fc-c-c">
+</view>
+
+<!-- 下面处理第二部分 -->
+<!-- 要定义相对位置对照的区域，要不然就会往上找，于是h-100p这个计算就不对 -->
+<!-- flex布局，要不然下方的元素不知道它们自己出现在哪里 -->
+<view class="w-100p h-180 relative fc-c-c">
+  <!-- 背景图 -->
+  <image src="{{bg2}}" class="w-100p h-100p absolute" />
+  <!-- 轮播图 -->
+  <!-- 基本就是这个结构，自定义的轮播图光标我做不写了大家可以看别的教程，之前有录过 -->
+  <!-- 还有个关键的步骤，轮播的时候，两个背景图都需要动态变化，所以我们还需要再裁剪一个图片看效果 -->
+  <!-- 循环出轮播图 -->
+  <!-- 轮播事件监听，切换背景图 -->
+  <!-- 传参 循环是在下面的所以传不了item，换个思路 -->
+  <swiper bindchange="swiperchange" class="w-95p h-100p z-index-2 mb10" autoplay="{{true}}">
+    <swiper-item wx:for="{{swiperList}}">
+      <image src="{{item.center}}" class="w-100p h-100p" mode=""/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 滚动栏自定义滚动进度 -->
+<!-- 先做一个滚动栏 -->
+<scroll-view bindscroll="scroll" class="w-93p radius-10 overflow h-150 c-bg-fff mt10 f-c-c" enable-flex="{{true}}" scroll-x="{{true}}">
+  <view class="w-100p h-100p f-s-c ml10">
+    <!-- 功能项 图片+文字 -->
+    <!-- 应该是两个一起，上下合在一起，方便循环不用额外去做外层宽度 -->
+    <!-- 循环7个看看效果 -->
+    <view wx:for="{{8}}" class="fc-c-c f-shrink h-100p mr13">
+      <view class="fc-c-c w-60">
+        <image src="/images/1.png" class="w-30 h-30" />
+        <text class="fs-12 mt5 c-gray1">果蔬鲜花</text>
+      </view>
+      <view class="fc-c-c w-60 f-shrink mt5">
+        <image src="/images/1.png" class="w-30 h-30" />
+        <text class="fs-12 mt5 c-gray1">果蔬鲜花</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 自定义进度栏,显示当前滚动条的位置 -->
+<!-- 上面滚动的时候这里需要实时显示，因此，需要监听滚动 -->
+<!-- 这个位置需要上挪 -->
+<view class="mt-10 w-50 h-5 radius-3 c-bg-gray0 f-s-c relative overflow">
+  <!-- 通过计算百分比，显示位置 -->
+  <text class="w-35 h-5 radius-3 c-bg-blue0 absolute" style="left:{{left}}%;"></text>
+</view>
+
+<!-- 先把之前的在处理一下 -->
+<!-- 继续剩下内容 -->
+<!-- 两个图片 -->
+<image src="/images/bg-0.png" class="w-93p h-40 mt20 radius-12" />
+<image src="/images/art-3.jpg" class="w-93p h-200 mt20 radius-12" />
+
+<!-- 热门产品入口 -->
+<view class="w-93p h-160 radius-12 mt10 f-b-c">
+  <!-- 看起来是两张图片 -->
+  <!-- 还真是图片 -->
+  <!-- 中间有间隔，说明需要两个自己设置背景图 -->
+  <view class="w-49p h-100p f-c-c c-bg-fff">
+    <image src="/images/c.png" class="w-30p" mode="aspectFit" />
+  </view>
+  <view class="w-49p h-100p f-c-c c-bg-fff">
+    <image src="/images/b.png" class="w-30p" mode="aspectFit" />
+  </view>
+</view>
+
+<!-- 限时特惠 -->
+<view class="w-93p h-180 fc-s-c c-bg-fff radius-12 mt10">
+  <!-- 处理这行 -->
+  <view class="w-93p h-30 f-s-c">
+    <text class="fw-600">限时特惠</text>
+    <!-- 时间是动态计算 -->
+    <text class="c-bg-yellow6 c-fff fw-600 padding-2-4 radius-8 fs-12 ml5 mr5">{{time}}</text>
+    <text class="fs-12 c-red2">后结束</text>
+    <text class="fs-12 c-blue1 mlauto">更多</text>
+    <text class="fa fa-angle-right c-blue1 ml5"></text>
+  </view>
+  <!-- 商品横向滚动栏 -->
+  <scroll-view class="w-100p h-150 f-s-c" scroll-x="{{true}}" enable-flex="{{true}}">
+    <view class="w-100p h-150 f-s-c">
+      <!-- 单个商品 -->
+      <!-- 循环一下 -->
+      <view wx:for="{{6}}" class="w-100 h-100p fc-c-c mr10">
+        <image src="/images/icon (1).png" class="w-60 h-60" />
+        <text class="fs-12 c-gray1 mt5">甜甜玉米油</text>
+        <!-- 价格区域，分左右两块 -->
+        <view class="w-100p h-30 f-b-c">
+          <!-- 左边 -->
+          <view class="w-60p h-100p fc-c-c">
+          <!-- ￥这个是小一丢丢的 -->
+            <view class="w100p h-20 f-s-b">
+              <text class="c-red1 fs-10">￥</text>
+              <text class="c-red1">66.66</text>
+            </view>
+            <text class="c-gray0 fs-12 t-throuth">￥88.88</text>
+          </view>
+          <!-- 右边 -->
+          <text class="fa fa-plus-circle fa-2x c-blue1"></text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 商品分类滚动条 -->
+<!-- 跟上面差不多，简单一些 -->
+<scroll-view wx:if="{{!isShow}}" class="w-100p h-60 f-s-c mt10" scroll-x="{{true}}" enable-flex="{{true}}">
+  <view class="w-100p h-60 f-s-c">
+    <!-- 循环一下 -->
+    <!-- 第一个是特殊的样式，不循环 -->
+    <!-- 变形了，需要加f-shrink -->
+    <!-- 差不多 -->
+    <view class="w-100 fc-c-c f-shrink">
+      <text class="c-blue1">热卖单品</text>
+      <text class="c-bg-blue1 c-fff fs-10 radius-8 padding-2-4 bbox mt5">wow人气</text>
+    </view>
+    <view  wx:for="{{6}}" class="w-100 fc-c-c f-shrink">
+      <text class="c-gray1">热卖单品</text>
+      <text class="c-gray1 fs-10 radius-8 padding-2-4 bbox mt5">wow人气</text>
+    </view>
+  </view>
+</scroll-view>
+<!-- 还有个吸顶样式 跟上面一样，直接拿下来 -->
+<!-- 吸顶的位置是跟着上面的那个吸顶的，需要看下上面的那个的高度 -->
+<!-- 接着需要控制，滚动到位置的时候显示/隐藏 -->
+<scroll-view wx:if="{{isShow}}" class="w-100p h-60 f-c-c fixed z-index-200 c-bg-fff" scroll-x="{{true}}" enable-flex="{{true}}" style="top:120px;" >
+  <view class="w-100p h-60 f-s-c c-bg-fff">
+    <view class="w-100 fc-c-c f-shrink">
+      <text class="c-blue1">热卖单品</text>
+    </view>
+    <view  wx:for="{{6}}" class="w-100 fc-c-c f-shrink ">
+      <text class="c-gray1">热卖单品</text>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 瀑布流商品列表 -->
+<!-- 简单做法：分2列 -->
+<view class="w-92p f-b-c">
+  <!-- 左 -->
+  <view class="w-50p fc-s-s">
+    <!-- 拿个盒子放 -->
+    <view wx:for="{{6}}" class="w-95p mb10 fc-s-c radius-10 overflow c-bg-fff padding-12 bbox">
+      <image src="/images/icon (14).png" class="w-50 h-50 " />
+      <!-- 文本溢出处理 -->
+      <text class="c-gray1 fs-12 w-100p to1">特伦舒 特伦舒 特伦舒 特伦舒</text>
+      <text class="c-gray0 fs-10 w-100p to1 mt5">优质蛋白</text>
+      <view class="h-14 w-100p f-s-c mt5">
+        <text class="c-red1 fs-10 border-self radius-2">满88减10</text>
+        <view class="h-100p f-s-c ml10">
+          <text class="c-bg-red1 fs-10 c-fff border-self">券</text>
+          <text class="c-red1 fs-10 border-self radius-2">满88减10</text>
+        </view>
+      </view>
+      <view class="w-100p h-20 f-s-b mt10">
+        <text class="c-red1 fs-10">￥</text>
+        <text class="c-red1">66.66</text>
+        <text class="fa fa-plus-circle fa-lg mlauto c-blue1"></text>
+      </view>
+    </view>
+    
+  </view>
+  <!-- 右边 -->
+  <view class="w-50p fc-s-e">
+    <!-- 拿个盒子放 -->
+    <view wx:for="{{6}}" class="w-95p mb10 fc-s-c radius-10 overflow c-bg-fff padding-12 bbox">
+      <image src="/images/icon (14).png" class="w-50 h-50 " />
+      <!-- 文本溢出处理 -->
+      <text class="c-gray1 fs-12 w-100p to1">特伦舒 特伦舒 特伦舒 特伦舒</text>
+      <text class="c-gray0 fs-10 w-100p to1 mt5">优质蛋白</text>
+      <view class="h-14 w-100p f-s-c mt5">
+        <text class="c-red1 fs-10 border-self radius-2">满88减10</text>
+        <view class="h-100p f-s-c ml10">
+          <text class="c-bg-red1 fs-10 c-fff border-self">券</text>
+          <text class="c-red1 fs-10 border-self radius-2">满88减10</text>
+        </view>
+      </view>
+      <view class="w-100p h-20 f-s-b mt10">
+        <text class="c-red1 fs-10">￥</text>
+        <text class="c-red1">66.66</text>
+        <text class="fa fa-plus-circle fa-lg mlauto c-blue1"></text>
+      </view>
+    </view>
+    
+  </view>
+</view>
+

@@ -1,0 +1,165 @@
+<!-- 背景图 -->
+<image src="/images/bg-0.png" class="w-100p h-200 absolute" />
+
+<!-- 头像 -->
+<view class="w-90p h-60 f-s-c z-index-2 mt80">
+  <image src="/images/profile.png" class="w-60 h-60 radius-30 border0" />
+  <!-- 处理文本溢出 -->
+  <text class="ml10 c-fff to1 w-70p">和你们这些少爷不同，我们光是活着就竭尽全力了。</text>
+</view>
+
+<!-- 数据展示栏 -->
+<view class="w-92p h-80 radius-12 c-bg-fff z-index-2 mt30 f-c-c">
+  <!-- 1 -->
+  <view class="w-25p h-40 fc-b-c r-line0">
+    <text class="fw-600">--</text>
+    <text class="fs-12 c-gray2">积分</text>
+  </view>
+  <!-- 2 -->
+  <view class="w-25p h-40 fc-b-c r-line0">
+    <text class="fw-600">--</text>
+    <text class="fs-12 c-gray2">我的钱包</text>
+  </view>
+  <!-- 3 -->
+  <view class="w-25p h-40 fc-b-c r-line0">
+    <text class="fw-600">--</text>
+    <text class="fs-12 c-gray2">卡券</text>
+  </view>
+  <!-- 4 -->
+  <view class="w-25p h-40 fc-b-c">
+    <text class="fw-600">--</text>
+    <text class="fs-12 c-gray2">收藏夹</text>
+  </view>
+</view>
+
+<!-- 我的订单 -->
+<view class="w-92p fc-c-c c-bg-fff radius-12 mt10">
+  <view class="w-100p f-s-c h-50 padding-14 bbox b-line0">
+    <text class="fw-600">我的订单</text>
+    <text class="fs-12 c-gray0 mlauto">全部订单</text>
+    <text class="fa fa-angle-right fa-lg c-gray0 ml10"></text>
+  </view>
+  <!-- 功能项 -->
+  <view class="w-100p f-c-c h-90">
+    <view class="fc-b-c h-50 w-20p">
+      <text class="fa fa-connectdevelop fa-2x"></text>
+      <text class="fs-12">待付款</text>
+    </view>
+
+    <view class="fc-b-c h-50 w-20p">
+      <text class="fa fa-cloud fa-2x"></text>
+      <text class="fs-12">已付款</text>
+    </view>
+
+    <view class="fc-b-c h-50 w-20p">
+      <text class="fa fa-copy fa-2x"></text>
+      <text class="fs-12">已发货</text>
+    </view>
+
+    <view class="fc-b-c h-50 w-20p">
+      <text class="fa fa-crop fa-2x"></text>
+      <text class="fs-12">已完成</text>
+    </view>
+
+    <view class="fc-b-c h-50 w-20p">
+      <text class="fa fa-crosshairs fa-2x"></text>
+      <text class="fs-12">退款/售后</text>
+    </view>
+  </view>
+</view>
+
+<!-- 我的服务 -->
+<view class="w-92p fc-c-c c-bg-fff radius-12 mt10">
+  <view class="w-100p f-s-c h-50 padding-14 bbox b-line0">
+    <text class="fw-600">我的服务</text>
+  </view>
+  <!-- 功能项 -->
+  <view class="w-100p f-s-c f-wrap padding-14-1">
+    <view class="fc-a-c h-60 w-25p f-shrink">
+      <text class="fa fa-compass fa-2x"></text>
+      <text class="fs-12">待付款</text>
+    </view>
+
+    <view class="fc-a-c h-60 w-25p f-shrink">
+      <text class="fa fa-cart-plus fa-2x"></text>
+      <text class="fs-12">购物车</text>
+    </view>
+
+    <view class="fc-a-c h-60 w-25p f-shrink">
+      <text class="fa fa-cloud-upload fa-2x"></text>
+      <text class="fs-12">上传</text>
+    </view>
+
+    <view class="fc-a-c h-60 w-25p f-shrink">
+      <text class="fa fa-cny fa-2x"></text>
+      <text class="fs-12">余额</text>
+    </view>
+
+    <view class="fc-a-c h-60 w-25p f-shrink">
+      <text class="fa fa-cogs fa-2x"></text>
+      <text class="fs-12">设置</text>
+    </view>
+
+    <view class="fc-a-c h-60 w-25p f-shrink">
+      <text class="fa fa-comment fa-2x"></text>
+      <text class="fs-12">联系我们</text>
+    </view>
+  </view>
+</view>
+
+<!-- 功能项 -->
+<view class="w-92p radius-12 c-bg-fff mt10 fc-s-c">
+  <view class="w-100p h-40 f-s-c b-line0 padding-both-14 bbox">
+    <text class="">关于我们</text>
+    <text class="fa fa-angle-right fa-lg c-gray0 mlauto"></text>
+  </view>
+  <view class="w-100p h-40 f-s-c b-line0 padding-both-14 bbox">
+    <text class="">消费者告知书</text>
+    <text class="fa fa-angle-right fa-lg c-gray0 mlauto"></text>
+  </view>
+  <view class="w-100p h-40 f-s-c b-line0 padding-both-14 bbox">
+    <text class="">服务条款</text>
+    <text class="fa fa-angle-right fa-lg c-gray0 mlauto"></text>
+  </view>
+  <view class="w-100p h-40 f-s-c b-line0 padding-both-14 bbox">
+    <text class="">隐私策略</text>
+    <text class="fa fa-angle-right fa-lg c-gray0 mlauto"></text>
+  </view>
+  <view class="w-100p h-40 f-s-c padding-both-14 bbox">
+    <text class="">购物规则</text>
+    <text class="fa fa-angle-right fa-lg c-gray0 mlauto"></text>
+  </view>
+</view>
+
+<!-- 提示 -->
+<text class="w-92p f-c-c h-40 mt20 c-bg-fff">为您推荐</text>
+
+<!-- 产品列表 -->
+<view class="w-92p f-b-c f-wrap mt20">
+  <!-- 单个产品 -->
+  <!-- 这里直接循环 -->
+  <view wx:for="{{10}}" class="w-48p fc-s-c radius-8 c-bg-fff overflow padding-12 bbox mt10">
+    <image src="/images/good-1.png" mode="aspectFit" class="w-80p h-100" />
+    <text class="fs-12 to2 w-100p mt10">如果有一个喜欢你的人出现，一定不要凶她哦哦哦哦哦哦</text>
+    <!-- 价格 -->
+    <view class="w-100p f-s-b mt5">
+      <text class="c-red2">$</text>
+      <text class="c-red2 fs-18 fw-600">99.99</text>
+      <text class="c-gray0 fs-12 ml5 t">$100.99</text>
+    </view>
+    <!-- 参考价格 -->
+    <text class="w-100p f-s-b mt5 c-gray0 fs-12">参考价格：￥200.99</text>
+
+    <view class="w-100p f-b-e h-40">
+      <text class="fs-12 c-gray1">云南大理</text>
+      <text class="w-40 h-40 f-c-c c-fff fa fa-cart-plus fa-2x radius-20 c-bg-blue0"></text>
+    </view>
+
+  </view>
+</view>
+
+
+<!-- 技术支持 -->
+<text class="fs-12 c-gray2 mt30 mb30">Powered by 小白白~</text>
+
+
